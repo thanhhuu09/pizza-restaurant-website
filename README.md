@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+- Landing page: ![image](https://github.com/thanhhuu09/pizza-restaurant-website/assets/58838162/d32a1df6-1b85-41a4-873f-da57fd25a513)
