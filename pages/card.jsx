@@ -7,7 +7,7 @@ const Card = () => {
       <div className={styles.left}>
         <table className={styles.table}>
           <tbody>
-            <tr className={styles.tr}>
+            <tr className={styles.trTitle}>
               <th>Product</th>
               <th>Name</th>
               <th>Extras</th>
@@ -15,7 +15,35 @@ const Card = () => {
               <th>Quantity</th>
               <th>Total</th>
             </tr>
-            <tr>
+            <tr className={styles.tr}>
+              <td>
+                <div className={styles.imgContainer}>
+                  <Image
+                    src="/img/pizza.png"
+                    fill
+                    style={{ objectFit: "cover" }}
+                    alt=""
+                  />
+                </div>
+              </td>
+              {/* PRODUCT'S NAME */}
+              <td className={styles.name}>CORALZO</td>
+              <td>
+                <span className={styles.extras}>
+                  Double ingredient, spicy sauce
+                </span>
+              </td>
+              <td>
+                <span className={styles.price}>$19.99</span>
+              </td>
+              <td>
+                <span className={styles.quantity}>2</span>
+              </td>
+              <td>
+                <span className={styles.total}>$39.80</span>
+              </td>
+            </tr>
+            <tr className={styles.tr}>
               <td>
                 <div className={styles.imgContainer}>
                   <Image
@@ -51,15 +79,15 @@ const Card = () => {
           <h2 className={styles.title}>CART TOTAL</h2>
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Subtotal:</b>
-            <b>$79.60</b>
+            $79.60
           </div>
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Discount:</b>
-            <b>$0.00</b>
+            $0.00
           </div>
           <div className={styles.totalText}>
             <b className={styles.totalTextTitle}>Total:</b>
-            <b>$79.60</b>
+            $79.60
           </div>
           <button className={styles.button}>CHECKOUT NOW!</button>
         </div>
